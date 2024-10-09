@@ -1,0 +1,64 @@
+.hovercard {
+    border: 0px solid black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hovercard:hover {
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(51, 79, 111), rgb(42, 112, 92), rgb(40, 83, 117));
+}
+
+.grocery_container {
+    border: 0px solid green;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 3rem;
+    padding: 8px;
+}
+
+
+@media only screen and (max-width: 1020px) {
+    .grocery_container {
+        border: 0px solid green;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3rem;
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .grocery_container {
+        border: 0px solid green;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        padding: 8px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .grocery_container {
+        border: 0px solid green;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        padding: 8px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .grocery_container {
+        border: 0px solid green;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 8px;
+    }
+
+}
